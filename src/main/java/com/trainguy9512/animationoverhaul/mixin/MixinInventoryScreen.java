@@ -1,6 +1,5 @@
 package com.trainguy9512.animationoverhaul.mixin;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.trainguy9512.animationoverhaul.access.LivingEntityAccess;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
