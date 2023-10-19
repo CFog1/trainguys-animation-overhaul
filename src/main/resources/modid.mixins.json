@@ -16,7 +16,6 @@
     "MixinItemInHandLayer",
     "MixinLivingEntity",
     "MixinLivingEntityRenderer",
-    "debug.MixinPlayerSkin",
     "models.MixinPlayerModel"
   ],
   "injectors": {
