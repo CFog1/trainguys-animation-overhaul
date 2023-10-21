@@ -81,11 +81,6 @@ public abstract class MixinGameRenderer {
     }
 
     @Inject(method = "renderLevel", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setInverseViewRotationMatrix(Lorg/joml/Matrix3f;)V"))
-    private void injectCameraRotation() {
-        injectCameraRotation(0.0F, 0L, null, null);
-    }
-
-    @Inject(method = "renderLevel", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setInverseViewRotationMatrix(Lorg/joml/Matrix3f;)V"))
     private void injectCameraRotation(float f, long l, PoseStack poseStack, CallbackInfo ci){
         if(this.minecraft.options.getCameraType().isFirstPerson() && this.renderHand){
             if(FirstPersonPlayerAnimator.INSTANCE.localBakedPose != null){
